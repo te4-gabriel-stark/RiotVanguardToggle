@@ -8,7 +8,7 @@ def start()
     shutdown = shutdown_or_restart(shutdown_restart_answer)
 
     enable ? (system "sc config vgk start= system") : (system "sc config vgk start= disabled")
-    shutdown ?  (system "shutdown /s") : (system "shutdown /r")
+    shutdown ? (system "shutdown /s") : (system "shutdown /r")
 end
 
 def enable_or_disable(enable_disable_answer)
