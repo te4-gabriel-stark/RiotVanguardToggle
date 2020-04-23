@@ -20,7 +20,7 @@ def enable_or_disable(enable_disable_answer)
         puts "You need to type 'e' to enable or 'd' to disable riot vanguard."
         puts "Try again."
         enable_disable_answer_2 = gets.chomp().downcase
-        enable_or_disable(enable_disable_answer_2)
+        enable = enable_or_disable(enable_disable_answer_2)
     end
     enable
 end
@@ -34,7 +34,7 @@ def shutdown_or_restart(shutdown_restart_answer)
         puts "You need to type 's' to shutdown or 'r' to restart."
         puts "Try again."
         shutdown_restart_answer_2 = gets.chomp().downcase
-        shutdown_or_restart(shutdown_restart_answer_2)
+        shutdown = shutdown_or_restart(shutdown_restart_answer_2)
     end
     shutdown
 end
